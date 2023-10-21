@@ -1,0 +1,7 @@
+{
+  "defaults": {
+    "situp": 45,
+    "pushup": 2,
+    "message": "Time is up. Workout Complete"
+  }
+}
