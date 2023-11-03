@@ -20,7 +20,8 @@
     // stopCounting(); // clear any existing intervals
     currentCount = 0; // reset count
 
-    speak("workout will start in 5 seconds");
+    // speak("workout will start in 5 seconds");
+    speak("Starting workout shortly");
     await sleep(5000);
 
     while (currentCount < targetNumber && shouldContinue) {
@@ -55,11 +56,11 @@
 
 <main>
   <h1>{currentCount}</h1>
-  <input
+  <!-- <input
     type="number"
     bind:value={targetNumber}
     placeholder="Enter a target number"
-  />
+  /> -->
   <button on:click={startCountUp}>Start</button>
   <button on:click={stopCounting}>Stop</button>
   <button on:click={reset}>Reset</button>
