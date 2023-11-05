@@ -20,16 +20,15 @@
     // stopCounting(); // clear any existing intervals
     currentCount = 0; // reset count
 
-    // speak("workout will start in 5 seconds");
-    speak("Starting workout shortly");
+    speak("workout will start in 5 seconds");
     await sleep(5000);
 
-    while (currentCount < targetNumber && shouldContinue) {
-      await sleep(500);
+    while (shouldContinue) {
+      await sleep(700);
       speak("raise");
-      await sleep(1500);
+      await sleep(1600);
       speak("down");
-      await sleep(500);
+      await sleep(700);
       currentCount += 1;
       speak(currentCount);
     }
@@ -76,8 +75,6 @@
     font-size: 2em;
     margin-bottom: 20px;
   }
-
-  input,
   button {
     padding: 10px;
     font-size: 1.2em;
